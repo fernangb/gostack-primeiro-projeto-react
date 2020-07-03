@@ -90,7 +90,7 @@ const Repository: React.FC = () => {
         {issues.map(issue => (
           <Link key={issue.id} to={issue.html_url}>
             <div>
-              <strong>{issue.user}</strong>
+              <strong>{issue.user.login}</strong>
               <p>{issue.title}</p>
             </div>
             <FiChevronRight size={20} />
